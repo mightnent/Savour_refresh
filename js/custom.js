@@ -100,4 +100,22 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+var $form_B2B = $('form#formSubmit'),        
+url_B2B = 'https://script.google.com/macros/s/AKfycbwDzceGJL6ZbTdQX6leKV7jVYtAtRK_dV102rLyEPtoMu1M6GqX/exec',
+url_Merchant = 'https://script.google.com/a/savourapp.co/macros/s/AKfycbxPUPeC15i5nd9atUuAwZOY82pqEbwydMRwo5q5/exec'
+var $form_merchant = $('form#formSubmitMerchant')
+
+$('#submit-form').on('click', function(e) {
+    console.log("form");
+    e.preventDefault();
+    var jqxhr = $.ajax({
+        url: url_B2B,
+        method: "GET",
+        dataType: "json",
+        data: $form_B2B.serialize()
+    }).success(
+        alert("We Will Reach Out To You Soon!")
+    );
+});
+
 }(jQuery));
