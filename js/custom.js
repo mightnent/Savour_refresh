@@ -37,7 +37,7 @@ if(client_logo.length){
   var review = $('.review_slider');
   if (review.length) {
     review.owlCarousel({
-      autoplay: true,
+      autoplay: false,
       autoPlaySpeed: 5000,
       items: 1,
       loop: true,
@@ -48,6 +48,25 @@ if(client_logo.length){
       navText : ['<i class="fas fa-chevron-circle-left"></i>','<i class="fas fa-chevron-circle-right"></i>']
     });
   }
+
+  var imageDataStructure = {0:"img/icon/computer.svg",1:"img/icon/sync.svg",2:"img/icon/rating.svg"}
+  var counter = 0
+  $('.owl-next').click(function(e){
+    counter ++;
+    if(counter>2){
+      counter=0          
+    } 
+    $('#sliderimage').attr("src",imageDataStructure[counter]);      
+  });
+
+  $('.owl-prev').click(function(e){
+    counter--;
+    if(counter<0){
+      counter=2
+    }
+    $('#sliderimage').attr("src",imageDataStructure[counter]);     
+  });
+
 
   $(document).ready(function() {
     $('select').each(function(){
@@ -114,13 +133,17 @@ if(client_logo.length){
     if (window_top > 50) {
       $('.navbar').css("background-color","white");
       $('.navbar').css("box-shadow","0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)");
-      $('.nav-link').css("color","black")
-      $('#mainlogo').attr("src","img/savour_orange_logo.png")
+      $('.nav-link').css("color","black");
+      $('#mainlogo').attr("src","img/savour_orange_logo.png");
+      $('#contact_request').css("border","1px solid #ff4800");
     } else {
       $('.navbar').css("background-color","transparent");
-      $('.nav-link').css("color","white")
-      $('#mainlogo').attr("src","img/savour_white_logo.png")
+      $('.nav-link').css("color","white");
+      $('#mainlogo').attr("src","img/savour_white_logo.png");
       $('.navbar').css("box-shadow","None");
+      $('#contact_request').css("border","none");
+      $('#contact_mainlogo').attr("src","img/savour_orange_logo.png");
+      $('.contact_navlink').css("color","black");
     }
   });
 

@@ -1100,7 +1100,7 @@ ul {
 /* line 259, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
 .causes_slider .owl-dots {
   text-align: center;
-  margin-top: 80px;
+  top:-100px;
 }
 
 /* line 263, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
@@ -2538,6 +2538,20 @@ ul {
 
 @media (max-width: 576px) {
   /* line 229, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
+  .fixed-top{
+    padding: 0;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    left: 20px;
+    z-index: 1030;
+    background-color: white;
+  }
+  .main_menu .navbar{
+    padding: 0;
+    background-color: #000;
+  }
+
   .navbar-brand img {
     max-width: 100px;
     right: auto;
@@ -2555,6 +2569,12 @@ ul {
   /* line 243, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
   .main_menu {
     height: 75px;
+    background-color: white;
+    position: sticky;  
+  }
+
+  .main_menu .main-menu-item .nav-item {
+  color: #000 !important;
   }
 }
 
@@ -3607,7 +3627,6 @@ ul {
   font-size: 45px;
   font-weight: 500;
   line-height: 55px;
-  margin-bottom: 28px;
   position: relative;
 }
 
@@ -3649,8 +3668,9 @@ ul {
 
 /* line 48, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_review_part.scss */
 .review_part .review_part_text p {
+  padding-top: 10px;
   line-height: 36px;
-  margin-bottom: 34px;
+
 }
 
 @media (max-width: 576px) {
@@ -3689,7 +3709,6 @@ ul {
 
 /* line 79, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_review_part.scss */
 .review_part .owl-dots {
-  padding-top: 33px;
 }
 
 /* line 82, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_review_part.scss */
@@ -6394,8 +6413,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   margin: 0 auto;
-  width: 30rem;
-  height: 21rem;
+  width: 100%;
+  height: 100%;
   border-radius: 25px;
 }
 
@@ -6517,13 +6536,38 @@ h1, h2, h3, h4, h5, h6 {
 /* owl nav */
 .owl-nav{
   font-size: 28px;
+  text-align: right;
 }
 .owl-prev, .owl-next {
   width: 15px;
+
+  position: relative;
   border:0px solid black;
   transform: translateY(-50%);
 }
-.owl-prev { left: 100px; }
-.owl-next { right: 90px; }
+.owl-prev { left: -100px; }
+.owl-next { right: 30px; }
 .owl-prev i, .owl-next i {transform : scale(2,2); color: #ccc;}
+
 /* end owl nav */
+
+/* contact section */
+#contact_section{
+  padding-bottom:0px;
+  padding-top:120px;
+}
+
+@media (max-width: 576px){
+  #contact_section{
+    padding-bottom:0px;
+    padding-top:10px;
+  }
+  #side_icon{
+    display: none;
+  }
+}
+/* end of contact section */
+
+a:hover{
+  color: #ff4800;
+}
