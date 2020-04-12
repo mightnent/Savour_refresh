@@ -45,6 +45,7 @@ if(client_logo.length){
       autoplayHoverPause: true,
       autoplayTimeout: 5000,
       nav: true,
+      navText : ['<i class="fas fa-chevron-circle-left"></i>','<i class="fas fa-chevron-circle-right"></i>']
     });
   }
 
@@ -111,9 +112,15 @@ if(client_logo.length){
   $(window).scroll(function () {
     var window_top = $(window).scrollTop() + 1;
     if (window_top > 50) {
-      $('.main_menu').addClass('menu_fixed animated fadeInDown');
+      $('.navbar').css("background-color","white");
+      $('.navbar').css("box-shadow","0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)");
+      $('.nav-link').css("color","black")
+      $('#mainlogo').attr("src","img/savour_orange_logo.png")
     } else {
-      $('.main_menu').removeClass('menu_fixed animated fadeInDown');
+      $('.navbar').css("background-color","transparent");
+      $('.nav-link').css("color","white")
+      $('#mainlogo').attr("src","img/savour_white_logo.png")
+      $('.navbar').css("box-shadow","None");
     }
   });
 
