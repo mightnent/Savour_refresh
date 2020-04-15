@@ -760,6 +760,54 @@ ul {
   }
 }
 
+/* line 58, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_button.scss */
+.btn_3 {
+  display: inline-block;
+  padding: 12px 44px;
+  margin-left: 20px;
+  border-radius: 50px;
+  background-color: rgb(28, 120, 207);
+  font-size: 15px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  border: 2px solid rgb(28, 120, 207);
+}
+
+/* line 70, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_button.scss */
+.btn_3:hover {
+  color: rgb(28, 120, 207) !important;
+  border: 2px solid rgb(28, 120, 207);
+  background-color: transparent;
+}
+
+@media (max-width: 576px) {
+  /* line 58, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_button.scss */
+  .btn_3 {
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 58, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_button.scss */
+  .btn_3 {
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 58, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_button.scss */
+  .btn_3 {
+    padding: 10px 30px;
+    margin-top: 25px;
+  }
+}
+
 /* line 91, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_button.scss */
 .btn_4 {
   color: #ff4800;
@@ -865,7 +913,7 @@ ul {
 
 /* line 14, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
 .blog_area a:hover, .blog_area a :hover {
-  color: #ff4800;
+  color: rgb(250, 207, 67);
 }
 
 /* line 20, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
@@ -1355,7 +1403,8 @@ ul {
 
 /* line 525, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
 .blog_details {
-  padding: 30px 0 20px 10px;
+  padding: 30px 0 20px 0;
+  
   box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
 }
 
@@ -1446,7 +1495,7 @@ ul {
   left: 10px;
   display: block;
   color: #fff;
-  background-color: #ff4800;
+  background-color: rgb(250, 207, 67);
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -1743,6 +1792,11 @@ ul {
 
 /*============ Start Blog Single Styles  =============*/
 /* line 1042, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
+.single-post-area{
+  padding: 0px 300px 100px 300px;
+  margin-top: 140px;
+}
+
 .single-post-area .blog_details {
   box-shadow: none;
   padding: 0;
@@ -1775,7 +1829,7 @@ ul {
 /* line 1070, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
 .single-post-area .blog_details p {
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* line 1080, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
@@ -1789,11 +1843,17 @@ ul {
   margin-bottom: 25px;
 }
 
+@media only screen and (max-width: 600px) {
+  .single-post-area{
+    padding: 0 20px 0 20px;
+    margin-top: 30px;
+  }
+}
 @media (min-width: 768px) {
   /* line 1080, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
   .single-post-area .quote-wrapper {
     padding: 30px;
-  }
+  }  
 }
 
 /* line 1094, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
@@ -3752,7 +3812,12 @@ ul {
   font-size: 45px;
   font-weight: 600;
   line-height: 55px;
-  margin-bottom: 77px;
+  text-transform: capitalize;
+  /* margin-bottom: 77px; */
+}
+.subscribe_part p {
+  margin:10px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 991px) {
@@ -6571,3 +6636,61 @@ h1, h2, h3, h4, h5, h6 {
 a:hover{
   color: #ff4800;
 }
+
+/* start of modal */
+.modal-dialog {
+  max-width: 800px;
+  top:50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+/* end of modal */
+
+/* start of category */
+.category{
+  margin: 0px 0 50px 0 ;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.flex-row{
+  display: flex;
+  justify-content: center;
+}
+
+.category_logo{
+  height: 180px;
+  width: 180px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.category_logo img{
+  height: 130px;
+}
+
+.category_logo p{
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+/* end of category */

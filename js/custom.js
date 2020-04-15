@@ -4,33 +4,33 @@
 
 // var client_logo = client_logo_slider
 
-var client_logo = $('.client_logo_slider')
-if(client_logo.length){
-  client_logo.owlCarousel({
-    items: 3,
-    loop: false,
-    responsive: {
-      0: {
-        items: 2,
-        margin: 15,
-        autoplay: true
-      },
-      600: {
-        items: 2,
-        margin: 15,
-        autoplay: true
-      },
-      991: {
-        items: 4,
-        margin: 15,
-      },
-      1200: {
-        items: 4,
-        margin: 15,
-      }
-    }             
-  });
-}
+  var client_logo = $('.client_logo_slider')
+  if(client_logo.length){
+    client_logo.owlCarousel({
+      items: 3,
+      loop: false,
+      responsive: {
+        0: {
+          items: 2,
+          margin: 15,
+          autoplay: true
+        },
+        600: {
+          items: 2,
+          margin: 15,
+          autoplay: true
+        },
+        991: {
+          items: 4,
+          margin: 15,
+        },
+        1200: {
+          items: 4,
+          margin: 15,
+        }
+      }             
+    });
+  }
 
 
 
@@ -56,7 +56,8 @@ if(client_logo.length){
     if(counter>2){
       counter=0          
     } 
-    $('#sliderimage').attr("src",imageDataStructure[counter]);      
+    $('#sliderimage').attr("src",imageDataStructure[counter]);
+
   });
 
   $('.owl-prev').click(function(e){
@@ -143,47 +144,75 @@ if(client_logo.length){
       $('.navbar').css("box-shadow","None");
       $('#contact_request').css("border","none");
       $('#contact_mainlogo').attr("src","img/savour_orange_logo.png");
-      $('.contact_navlink').css("color","black");
+      $('.black_navlink').css("color","black");
     }
   });
 
- $('.gallery_img').magnificPopup({
-  type: 'image',
-  gallery:{
-    enabled:true
-  }
-});
+  $('.gallery_img').magnificPopup({
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
 
 // Search Toggle
-$("#search_input_box").hide();
-$("#search_1").on("click", function () {
-  $("#search_input_box").slideToggle();
-  $("#search_input").focus();
-});
-$("#close_search").on("click", function () {
-  $('#search_input_box').slideUp(500);
-});
+  $("#search_input_box").hide();
+  $("#search_1").on("click", function () {
+    $("#search_input_box").slideToggle();
+    $("#search_input").focus();
+  });
+  $("#close_search").on("click", function () {
+    $('#search_input_box').slideUp(500);
+  });
 
 //------- Mailchimp js --------//  
-function mailChimp() {
-  $('#mc_embed_signup').find('form').ajaxChimp();
-}
-mailChimp();
+  function mailChimp() {
+    $('#mc_embed_signup').find('form').ajaxChimp();
+  }
+  mailChimp();
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+
+  $(document).ready(function() {
+
+    // Gets the video src from the data-src on each button
+    
+    var $videoSrc;  
+    $('.btn_3').click(function() {
+        $videoSrc = $(this).data( "src" );
+    });
+    console.log($videoSrc);
+    
+      
+      
+    // when the modal is opened autoplay it  
+    $('#myModal').on('shown.bs.modal', function (e) {
+        
+    // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+    $("#video").attr('src',$videoSrc+ "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"); 
+    })
+
+    // stop playing the youtube video when I close the modal
+    $('#myModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src',$videoSrc); 
+    }) 
+        
+    // document ready  
   });
-}
 
 
 var $form_B2B = $('form#formSubmit'),        
