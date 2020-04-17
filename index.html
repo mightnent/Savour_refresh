@@ -2,6 +2,16 @@
 <html lang="zxx">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159623553-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159623553-1');
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -367,7 +377,7 @@
         <div class="container">
             <h1 style="display:flex;justify-content:center;align-items:center;">Categories</h1>
             <div class="row">
-                <div class="col-lg-4 col-6 flex-row">
+                <div class="col-md-4 col-sm-6 col-6 flex-row">
                     <div class="category_logo">
                         <img src="img/category/building.svg" alt="">
                         <p>Food Wholesalers</p>
@@ -375,35 +385,35 @@
                     
                 </div>
 
-                <div class="col-lg-4 col-6 flex-row">
+                <div class="col-md-4 col-sm-6 col-6 flex-row">
                     <div class="category_logo">
                         <img src="img/category/coffee.svg" alt="">
                         <p>Bakeries & Cafe</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-6 flex-row">
+                <div class="col-md-4 col-sm-6 col-6 flex-row">
                     <div class="category_logo">
                         <img src="img/category/food.svg" alt="">
                         <p>F&B Snacks</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-6 flex-row">
+                <div class="col-md-4 col-sm-6 col-6 flex-row">
                     <div class="category_logo">
                         <img src="img/category/gift.svg" alt="">
                         <p>Gift Customization</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-6 flex-row">
+                <div class="col-md-4 col-sm-6 col-6 flex-row">
                     <div class="category_logo">
                         <img src="img/category/camera.svg" alt="">
                         <p>Event Services</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-6 flex-row">
+                <div class="col-md-4 col-sm-6 col-6 flex-row">
                     <div class="category_logo ">
                         <img src="img/category/beauty.svg" alt="">
                         <p>Health & Beauty</p>
@@ -461,14 +471,14 @@
                         
                         <p>be the first to know all the latest, trending and best-selling products and promotions sent straight to your inbox</p>
                         <div class="subscribe_form">
-                            <form action="#">
+                            <form method="post" id="newsletter">
                                 <div class="form-row">
-                                    <div class="col-sm-9">
-                                        <input type="email" class="form-control" placeholder="enter your email">
+                                    <div class="col-md-9 col-12">
+                                        <input name = "email_newsletter" id="email_newsletter" type="email" class="form-control" placeholder="enter your email">
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-md-3 col-12">
                                         <div class="subscribe_btn">
-                                            <div class="btn_2 d-block">Subscribe!</div>
+                                            <button type="submit" id="submit_newsletter" class="btn_2 d-block btn-block">Subscribe!</button>
                                         </div>
                                     </div>
                                 </div>

@@ -710,6 +710,7 @@ ul {
   .btn_1 {
     padding: 10px 30px;
     margin-top: 25px;
+    display: none !important;
   }
 }
 
@@ -766,7 +767,7 @@ ul {
   padding: 12px 44px;
   margin-left: 20px;
   border-radius: 50px;
-  background-color: rgb(28, 120, 207);
+  background-color: #F0A91D;
   font-size: 15px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
@@ -774,13 +775,13 @@ ul {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-transform: uppercase;
-  border: 2px solid rgb(28, 120, 207);
+  border: 2px solid #F0A91D;
 }
 
 /* line 70, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_button.scss */
 .btn_3:hover {
-  color: rgb(28, 120, 207) !important;
-  border: 2px solid rgb(28, 120, 207);
+  color:#F0A91D !important;
+  border: 2px solid #F0A91D;
   background-color: transparent;
 }
 
@@ -1843,17 +1844,23 @@ ul {
   margin-bottom: 25px;
 }
 
+
+@media (max-width: 768px) {
+  /* line 1080, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
+  .single-post-area .quote-wrapper {
+    padding: 30px;
+  }  
+  .single-post-area{
+    padding: 0 100px 0 100px;
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .single-post-area{
     padding: 0 20px 0 20px;
     margin-top: 30px;
   }
-}
-@media (min-width: 768px) {
-  /* line 1080, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
-  .single-post-area .quote-wrapper {
-    padding: 30px;
-  }  
 }
 
 /* line 1094, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
@@ -2746,8 +2753,8 @@ ul {
 }
 
 /* line 339, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
-.menu_fixed .home_page_btn {
-  
+.main_menu .main-menu-item .nav-item .nav-link {
+  color: #000!important;
 }
 
 .fixed-top{
@@ -3888,6 +3895,15 @@ ul {
   .subscribe_part .form-control {
     padding: 25px 15px;
   }
+  /* #submit_newsletter{
+    height:calc(1.5em + .75rem + 2px);
+    padding: 25px 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: smaller;
+    
+  } */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -6626,9 +6642,14 @@ h1, h2, h3, h4, h5, h6 {
   #contact_section{
     padding-bottom:0px;
     padding-top:10px;
+    margin-bottom: 0px;
   }
   #side_icon{
     display: none;
+  }
+
+  .card-2{
+    padding-bottom: 0px;
   }
 }
 /* end of contact section */
@@ -6693,4 +6714,78 @@ opacity:1;
   right: 0;
 }
 
+@media (max-width: 576px) {
+  .category{
+    margin: 0px 0 30px 0 ;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  .category_logo{
+    height: auto;
+    padding: 2px; 
+    margin-bottom: 30px;
+    position: relative;
+  }
+}
 /* end of category */
+
+/* Single blog post text formating */
+.single-post-area .blog_details ul{
+  list-style-type: disc;
+  list-style-position:inside;
+}
+.single-post-area .blog_details ul li{
+  font-size: 20px;
+  color:#888888;
+  font-weight: 400;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 28px;
+}
+
+.single-post-area .blog_details ol{
+  font-size: 20px;
+  color:#888888;
+  font-weight: 400;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 28px;
+  list-style-position: inside;
+  padding-left:0;
+  margin-top: 20px;
+}
+
+.blog_details a:hover {
+  color: rgb(250, 207, 67) !important;
+}
+
+.single-post-area hr{
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  width: 20%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.single-post-area hr:after{
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.90em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+@media (max-width: 576px){
+  .single-post-area hr{
+
+  width: 80%;
+
+}
+}
+/* end of single blog post text formating */

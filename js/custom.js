@@ -215,21 +215,37 @@
   });
 
 
-var $form_B2B = $('form#formSubmit'),        
-url_B2B = 'https://script.google.com/macros/s/AKfycbwDzceGJL6ZbTdQX6leKV7jVYtAtRK_dV102rLyEPtoMu1M6GqX/exec',
-url_Merchant = 'https://script.google.com/a/savourapp.co/macros/s/AKfycbxPUPeC15i5nd9atUuAwZOY82pqEbwydMRwo5q5/exec'
-var $form_merchant = $('form#formSubmitMerchant')
+var $form = $('form#formSubmit'),        
+url = 'https://script.google.com/macros/s/AKfycbxry-Y-gYQgaG9x-VJ70_5eWWpdwJP7n4Xx7k4JpjrqJd7Amw_j/exec'
 
 $('#submit-form').on('click', function(e) {
     console.log("form");
     e.preventDefault();
     var jqxhr = $.ajax({
-        url: url_B2B,
+        url: url,
         method: "GET",
         dataType: "json",
-        data: $form_B2B.serialize()
+        data: $form.serialize()
     }).success(
-        alert("We Will Reach Out To You Soon!")
+        alert("We Will Reach Out To You Soon!"),
+        $form[0].reset()
+    );
+});
+
+var $newsletter = $('form#newsletter'),        
+url_newsletter = 'https://script.google.com/macros/s/AKfycbz6KmnVk79_QjG5i5Tn5FfY8ashM4nsKblo1c_wczMoybG9SZU/exec'
+
+$('#submit_newsletter').on('click', function(e) {
+    console.log("form");
+    e.preventDefault();
+    var jqxhr = $.ajax({
+        url: url_newsletter,
+        method: "GET",
+        dataType: "json",
+        data: $newsletter.serialize()
+    }).success(
+        alert("Thank You For Subscribing!"),
+        $newsletter[0].reset()
     );
 });
 
