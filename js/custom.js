@@ -131,14 +131,15 @@
   // menu fixed js code
   $(window).scroll(function () {
     var window_top = $(window).scrollTop() + 1;
-    if (window_top > 50) {
+    var window_width = $(window).width();
+    if (window_top > 50 && window_width>990) {
       $('.navbar').css("background-color","white");
       $('.navbar').css("box-shadow","0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)");
       $('.nav-link').css("color","black");
       $('#mainlogo').attr("src","img/savour_orange_logo.png");
       $('#contact_request').css("border","1px solid #ff4800");
     } else {
-      $('.navbar').css("background-color","transparent");
+      $('.navbar').css("background-color","white");
       $('.nav-link').css("color","white");
       $('#mainlogo').attr("src","img/savour_white_logo.png");
       $('.navbar').css("box-shadow","None");
