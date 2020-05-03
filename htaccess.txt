@@ -1,0 +1,14 @@
+#rewrite
+
+RewriteEngine on 
+
+#if file name coincide with existing dir, dont do anything
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#check if file exist with .html, else skip this script
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# actual logic to render .html ext
+#NC means no case
+#L means this rule only takes the logic above but no below it
+RewriteRule ^(.*)$ $1.html [L]
