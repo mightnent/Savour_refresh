@@ -140,6 +140,7 @@
       $('#contact_request').css("border","1px solid #ff4800");
     } else {
       $('.navbar').css("background-color","white");
+      $('#index-nav').css("background-color","transparent");
       $('.nav-link').css("color","white");
       $('#mainlogo').attr("src","img/savour_white_logo.png");
       $('.navbar').css("box-shadow","None");
