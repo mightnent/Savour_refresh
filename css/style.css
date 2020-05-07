@@ -3932,6 +3932,11 @@ ul {
   padding: 0 0 140px;
 }
 
+.client_logo_individual img{
+  max-width: 130px;
+  max-height: 100px;
+}
+
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_client_logo.scss */
   .client_logo {

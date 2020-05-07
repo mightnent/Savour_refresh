@@ -1,8 +1,9 @@
 .main{
-    font-size:10em;
+    font-size:13em;
     text-align:center;
     color:#FAB71C;
     margin-top:70px;
+    text-transform: uppercase;
 }
 
 .sub{
