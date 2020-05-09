@@ -34,7 +34,14 @@ input:hover, input:focus, .form-control:focus {
 
 /* line 21, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_common.scss */
 .section_padding {
-  padding: 140px 0px;
+  padding-top:80px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 80px;
+}
+
+.homepageimg{
+  height: 460px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -54,14 +61,21 @@ input:hover, input:focus, .form-control:focus {
 @media (max-width: 576px) {
   /* line 21, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_common.scss */
   .section_padding {
-    padding: 70px 0px;
+    padding: 60px 0px;
+  }
+  .homepageimg{
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .mobile-hide{
+    display: none;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 21, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_common.scss */
   .section_padding {
-    padding: 70px 0px;
+    padding: 50px 0px;
   }
 }
 
@@ -3365,6 +3379,9 @@ ul {
   /* line 59, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_about_us.scss */
   .about_us .about_us_text p {
     margin-bottom: 10px;
+  }
+  .about_us{
+    padding: 0 0 30px;
   }
 }
 
@@ -6826,7 +6843,8 @@ opacity:1;
   .single-post-area hr{
 
   width: 80%;
+  }
 
-}
+
 }
 /* end of single blog post text formating */
