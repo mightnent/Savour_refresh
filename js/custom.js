@@ -223,6 +223,7 @@ url = 'https://script.google.com/macros/s/AKfycbxry-Y-gYQgaG9x-VJ70_5eWWpdwJP7n4
 $('#submit-form').on('click', function(e) {
     console.log("form");
     e.preventDefault();
+    if(! $form.valid()) return false;
     var jqxhr = $.ajax({
         url: url,
         method: "GET",
