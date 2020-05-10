@@ -2789,6 +2789,53 @@ ul {
   padding-right:200px;
   padding-left:200px;
 }
+/* banner merchant */
+
+.banner_merchant{
+  margin-top:100px;
+  background-image: url(../img/meeting.jpg);
+  background-position:center;
+  height: 500px;
+  float:left;
+  width:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.banner_container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; 
+}
+
+#p1{
+  font-family: Manrope;
+  font-weight: 600;
+  font-size: 3.5em;
+  color:white;
+}
+
+#p2{
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 1.5em;
+  color:white;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 576px) {
+  .banner_merchant{
+    margin-top:0px;
+    height: 200;
+  }
+}
+
+/* end banner merchant */
 
 /**************** banner part css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_banner.scss */

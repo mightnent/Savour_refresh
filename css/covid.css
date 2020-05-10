@@ -1,7 +1,13 @@
+.slide{
+    background-color: #FAB71C!important;
+}
+.fade-6 .content {
+    background: none;
+}
 .main{
     font-size:13em;
     text-align:center;
-    color:#FAB71C;
+    color:white;
     margin-top:70px;
     text-transform: uppercase;
 }
@@ -9,8 +15,19 @@
 .sub{
     font-size:3.5em;
     text-align:center;
-    color:white;
+    color:black;
     margin-bottom:20px;
+}
+
+.wrap1 .btn-outline-warning {
+    color: white;
+    border-color: white;
+}
+
+.wrap1 .btn-outline-warning:hover {
+    color: #FAB71C;
+    background-color: white!important;
+    border-color: white!important;
 }
 
 .btn-warning{
