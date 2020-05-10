@@ -1,8 +1,15 @@
 (function ($) {
   "use strict";
 
+  //counting animation
+  $('.counter').counterUp({
+    delay: 15,
+    time: 3000
+  });
+  $('.counter').addClass('animated fadeInDownBig');
+  $('.label-bottom').addClass('animated fadeIn');
 
-// var client_logo = client_logo_slider
+  // var client_logo = client_logo_slider
 
   var client_logo = $('.client_logo_slider')
   if(client_logo.length){

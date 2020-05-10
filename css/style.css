@@ -1,5 +1,6 @@
 /**************** extend css start ****************/
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,600,700|Rajdhani:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap");
 /* line 8, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_extends.scss */
 .form-contact .form-group .btn_1 {
   background-image: linear-gradient(to left, #fff 0%, #fff 51%, #fff 100%);
@@ -147,7 +148,7 @@ input:hover, input:focus, .form-control:focus {
 
 /* line 66, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_common.scss */
 .padding_bottom {
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -3861,9 +3862,11 @@ ul {
 @media (max-width: 991px) {
   /* line 11, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_subscribe_part.scss */
   .subscribe_part h2 {
-    font-size: 25px;
+    font-size: 36px;
     margin-bottom: 25px;
     line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -3944,8 +3947,22 @@ ul {
   }
 }
 
-/************client css start***************/
+/************partnership css start***************/
 /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_client_logo.scss */
+.partnership{
+  margin-top: 100px;
+}
+
+.partnership h2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:20px;
+  font-family: Manrope;
+  font-weight: 400;
+  color: #888888;
+}
+
 .client_logo {
   padding: 0 0 140px;
 }
@@ -3957,6 +3974,10 @@ ul {
 
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_client_logo.scss */
+  .partnership{
+    margin-top: 50px;
+  }
+
   .client_logo {
     padding: 0 0 70px;
   }
@@ -3989,6 +4010,7 @@ ul {
 .client_logo .single_client_logo img {
   margin: 0 auto;
 }
+
 
 /**********************footer part css*******************/
 /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
@@ -6725,9 +6747,21 @@ opacity:1;
 
 /* start of category */
 .category{
-  margin: 0px 0 50px 0 ;
+  margin: 0px 0 0px 0 ;
   padding-left: 200px;
   padding-right: 200px;
+  background-color: #ebebeb73;
+  padding-top:50px;
+}
+
+.category h2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:20px;
+  color: #888888;
+  font-family: Manrope;
+  font-weight: 400;
 }
 
 .flex-row{
@@ -6766,7 +6800,7 @@ opacity:1;
 
 @media (max-width: 576px) {
   .category{
-    margin: 0px 0 30px 0 ;
+    margin: 0 0 0 0 ;
     padding-left: 10px;
     padding-right: 10px;
 
@@ -6848,3 +6882,85 @@ opacity:1;
 
 }
 /* end of single blog post text formating */
+
+/* featured */
+.featured{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.featured h2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:20px;
+  font-family: Manrope;
+  font-weight: 400;
+  color: #888888;
+  padding-bottom: 20px;
+}
+
+.featured_logo img{
+  height: 130px;
+}
+
+@media (max-width: 576px){
+  .featured h2{
+    font-size: 22px;
+  }
+}
+/* end of featured */
+
+/* count */
+
+.count{
+  /* height:250px; */
+  background-color: #ebebeb73;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.countcard{
+  height: 150px;
+  position: relative;
+  border: none !important; 
+}
+.count-text{
+  text-align: center;
+}
+
+.label-center{
+  vertical-align: middle;
+  line-height: 110px;
+  font-weight:bold;
+  font-size: 2.5em;
+  color:#F0AB25;
+}
+
+.label-bottom{
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.counter{
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.row-center {
+  text-align:center;
+}
+
+.col-center {
+  display:inline-block;
+  float:none;
+}
+
+@media (max-width: 576px){
+  .countcard{
+    margin-bottom: 20px;
+  }
+}
+/* end count */
