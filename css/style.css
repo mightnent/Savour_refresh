@@ -2789,6 +2789,7 @@ ul {
   padding-right:200px;
   padding-left:200px;
 }
+
 /* banner merchant */
 
 .banner_merchant{
@@ -2809,7 +2810,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px; 
+  width: 620px; 
 }
 
 #p1{
@@ -2817,15 +2818,19 @@ ul {
   font-weight: 600;
   font-size: 3.5em;
   color:white;
+  text-align: center;
+  line-height: normal;
 }
 
 #p2{
+  padding-top: 40px;
   font-family: Manrope;
   font-weight: 400;
   font-size: 1.5em;
   color:white;
   padding-left: 50px;
   padding-right: 50px;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
@@ -2833,9 +2838,16 @@ ul {
     margin-top:0px;
     height: 200;
   }
+
+  .banner_container{
+    width: 100%;
+    top:40%;
+  }
 }
 
 /* end banner merchant */
+
+
 
 /**************** banner part css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_banner.scss */
@@ -6636,6 +6648,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.cardicon{
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}
+
 /* end of card ui */
 
 /* start of select */
@@ -6971,6 +6989,17 @@ opacity:1;
   position: relative;
   border: none !important; 
 }
+
+.count h2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:50px;
+  color: #888888;
+  font-family: Manrope;
+  font-weight: 400;
+}
+
 .count-text{
   text-align: center;
 }
@@ -7011,3 +7040,33 @@ opacity:1;
   }
 }
 /* end count */
+
+/* withus */
+
+.withus h2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:50px;
+  margin-bottom:10px;
+  color: #888888;
+  font-family: Manrope;
+  font-weight: 400;  
+}
+
+/* end withus */
+
+/* misc hacks */
+
+.filler{
+  height: 630px;
+  background-color: #ebebeb73;
+}
+
+@media (max-width: 576px){
+  .filler{
+    height: 550px;
+  }
+}
+
+/* end misc hacks */
