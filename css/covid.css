@@ -1,5 +1,5 @@
 .slide{
-    background-color: #FAB71C!important;
+    background-color: #F6A31A!important;
 }
 .fade-6 .content {
     background: none;
@@ -25,20 +25,20 @@
 }
 
 .wrap1 .btn-outline-warning:hover {
-    color: #FAB71C;
+    color: #F6A31A;
     background-color: white!important;
     border-color: white!important;
 }
 
 .btn-warning{
-    background-color:#FAB71C !important;
-    border-color:#FAB71C !important;
+    background-color:#F6A31A !important;
+    border-color:#F6A31A !important;
     pointer-events: none !important;
 }
 
 .btn-warning:hover{
-    background-color:#FAB71C !important;
-    border-color:#FAB71C !important;
+    background-color:#F6A31A !important;
+    border-color:#F6A31A !important;
 }
 
 .btn{
