@@ -4018,7 +4018,7 @@ ul {
   align-items:center;
   margin-bottom:20px;
   font-family: Manrope;
-  font-weight: 400;
+  font-weight: 600;
   color: #888888;
 }
 
@@ -6826,7 +6826,7 @@ opacity:1;
   margin-bottom:20px;
   color: #888888;
   font-family: Manrope;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .flex-row{
@@ -6960,7 +6960,7 @@ opacity:1;
   align-items:center;
   margin-bottom:20px;
   font-family: Manrope;
-  font-weight: 400;
+  font-weight: 600;
   color: #888888;
   padding-bottom: 20px;
 }
@@ -6997,7 +6997,7 @@ opacity:1;
   margin-bottom:50px;
   color: black;
   font-family: Manrope;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .count-text{
@@ -7051,12 +7051,18 @@ opacity:1;
   margin-bottom:10px;
   color: black;
   font-family: Manrope;
-  font-weight: 400;  
+  font-weight: 600;  
 }
 
 /* end withus */
 
 /* onboarding */
+.onboarding{
+  background-color:#ebebeb73 ;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 .onboarding h2{
   text-align: center;
 }
@@ -7083,7 +7089,7 @@ opacity:1;
   color:white;
   text-align: center;
   font-family: Manrope;
-  font-weight: 400;
+  font-weight: 600;
   width: 30%;
   padding: 10px;
 }
@@ -7106,6 +7112,60 @@ opacity:1;
 
 
 /* end of onboarding */
+
+/* faq */
+.faq{
+  background-color: #dadada8f;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;  
+}
+.faq .container h2{
+  padding-bottom: 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  margin-bottom:10px;
+  color: black;
+  font-family: Manrope;
+  font-weight: 600;    
+}
+.faq .accordion{
+  margin-left: 100px;
+  margin-right:100px;
+}
+
+.accordion .card{
+  margin-top: 20px;
+  border:none;
+  background-color: white;
+}
+
+.accordion .card:hover{
+  
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  
+}
+
+.accordion>.card .card-header{
+  background-color: white;
+}
+
+.accordion .card-header .btn{
+  text-align: left;
+  width: 100%;
+}
+
+@media (max-width: 576px){
+  .faq .accordion{
+    margin-left: 50px;
+    margin-right:50px;
+  }
+}
+
+/* end of faq */
 
 /* misc hacks */
 
