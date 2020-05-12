@@ -3411,6 +3411,11 @@ ul {
     margin-bottom: 10px;
     line-height: 35px;
   }
+  .about_us_text{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -3813,6 +3818,10 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .review_part{
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
   /* line 16, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_review_part.scss */
   .review_part .review_part_text h2 {
     font-size: 25px;
@@ -3891,6 +3900,7 @@ ul {
 
 /* line 79, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_review_part.scss */
 .review_part .owl-dots {
+  text-align: center;
 }
 
 /* line 82, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_review_part.scss */
