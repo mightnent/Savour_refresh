@@ -1,6 +1,6 @@
 /**************** extend css start ****************/
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,600,700|Rajdhani:400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap");
 /* line 8, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_extends.scss */
 .form-contact .form-group .btn_1 {
   background-image: linear-gradient(to left, #fff 0%, #fff 51%, #fff 100%);
@@ -2574,7 +2574,7 @@ ul {
   }
   /* line 173, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
   .navbar-brand img {
-    max-width: 100px;
+    max-width: 200px;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -2597,7 +2597,18 @@ ul {
   }
 }
 
+@media only screen and (min-width: 1201px) and (max-width: 1300px){
+  .main_menu .navbar{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .main_menu .navbar{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
   /* line 195, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
   .main_menu .navbar-nav {
     margin-left: -50px;
@@ -2814,7 +2825,7 @@ ul {
 }
 
 #p1{
-  font-family: Manrope;
+  
   font-weight: 600;
   font-size: 3.5em;
   color:white;
@@ -2824,7 +2835,7 @@ ul {
 
 #p2{
   padding-top: 40px;
-  font-family: Manrope;
+  
   font-weight: 400;
   font-size: 1.5em;
   color:white;
@@ -3518,6 +3529,17 @@ ul {
   z-index: 1;
   position: relative;
   z-index: 99;
+  padding-top: 140px;
+}
+
+.use_sasu h2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:20px;
+  
+  font-weight: 600;
+  color: black;
 }
 
 @media (max-width: 991px) {
@@ -3765,6 +3787,8 @@ ul {
 .review_part {
   position: relative;
   z-index: 99;
+  padding-top:140px;
+  padding-bottom:50px;
 }
 
 /* line 6, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_review_part.scss */
@@ -4017,9 +4041,9 @@ ul {
   justify-content:center;
   align-items:center;
   margin-bottom:20px;
-  font-family: Manrope;
+  
   font-weight: 600;
-  color: #888888;
+  color: black;
 }
 
 .client_logo {
@@ -6827,8 +6851,8 @@ opacity:1;
   justify-content:center;
   align-items:center;
   margin-bottom:20px;
-  color: #888888;
-  font-family: Manrope;
+  color: black;
+  
   font-weight: 600;
 }
 
@@ -6962,9 +6986,9 @@ opacity:1;
   justify-content:center;
   align-items:center;
   margin-bottom:20px;
-  font-family: Manrope;
+  
   font-weight: 600;
-  color: #888888;
+  color: black;
   padding-bottom: 20px;
 }
 
@@ -6999,7 +7023,7 @@ opacity:1;
   align-items:center;
   margin-bottom:50px;
   color: black;
-  font-family: Manrope;
+  
   font-weight: 600;
 }
 
@@ -7053,7 +7077,7 @@ opacity:1;
   margin-top:50px;
   margin-bottom:10px;
   color: black;
-  font-family: Manrope;
+  
   font-weight: 600;  
 }
 
@@ -7091,7 +7115,7 @@ opacity:1;
   background-color: #F6a13a;
   color:white;
   text-align: center;
-  font-family: Manrope;
+  
   font-weight: 600;
   width: 30%;
   padding: 10px;
@@ -7131,7 +7155,7 @@ opacity:1;
 
   margin-bottom:10px;
   color: black;
-  font-family: Manrope;
+  
   font-weight: 600;    
 }
 .faq .accordion{

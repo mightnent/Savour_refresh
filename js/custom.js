@@ -44,7 +44,7 @@
   var review = $('.review_slider');
   if (review.length) {
     review.owlCarousel({
-      autoplay: false,
+      autoplay: true,
       autoPlaySpeed: 5000,
       items: 1,
       loop: true,
