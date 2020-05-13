@@ -6949,6 +6949,10 @@ opacity:1;
   color: rgb(250, 207, 67) !important;
 }
 
+.blog_details h2{
+  text-transform: capitalize;
+}
+
  hr{
   overflow: visible; /* For IE */
   padding: 0;
@@ -7214,6 +7218,9 @@ opacity:1;
 @media (max-width: 576px){
   .filler{
     height: 550px;
+  }
+  .img-fluid{
+    height: 174.4px;
   }
 }
 
