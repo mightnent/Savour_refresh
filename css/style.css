@@ -7220,7 +7220,7 @@ opacity:1;
     height: 550px;
   }
   .img-fluid{
-    height: 174.4px;
+    height: 174.4px!important;
   }
 }
 
