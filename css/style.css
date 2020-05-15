@@ -2451,6 +2451,8 @@ ul {
   font-weight: 600;
 }
 
+
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 44, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
   .main_menu .main-menu-item ul li .nav-link {
@@ -2660,7 +2662,7 @@ ul {
 
   .navbar-brand img {
     max-width: 100px;
-    right: auto;
+    right: auto ;
     left: 0;
     top: 5px;
   }
@@ -2825,7 +2827,7 @@ ul {
 }
 
 #p1{
-  
+  text-transform: capitalize;
   font-weight: 600;
   font-size: 3.5em;
   color:white;
@@ -2929,7 +2931,7 @@ ul {
 
 /* line 44, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_banner.scss */
 .banner_part .banner_text h1 {
-  font-size: 60px;
+  font-size: 40px;
   text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 40px;
@@ -6849,11 +6851,11 @@ opacity:1;
 
 /* start of category */
 .category{
-  margin: 0px 0 0px 0 ;
   padding-left: 200px;
   padding-right: 200px;
   background-color: #ebebeb73;
   padding-top:50px;
+  padding-bottom: 50px;
 }
 
 .category h2{
@@ -7210,6 +7212,11 @@ opacity:1;
 
 /* misc hacks */
 
+#orangelogo{
+  width: 200px;
+  height: 67px;
+}
+
 .filler{
   height: 630px;
   background-color: #ebebeb73;
@@ -7221,6 +7228,14 @@ opacity:1;
   }
   .img-fluid{
     height: 174.4px!important;
+  }
+
+  #orangelogo{
+    max-width: 100px !important;
+    height: auto;
+    right: auto !important;
+    left: 0 !important;
+    top: 5px !important;
   }
 }
 
