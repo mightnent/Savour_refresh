@@ -153,6 +153,7 @@
       $('#mainlogo').attr("src","img/savour_white_logo.png");
       $('.navbar').css("box-shadow","None");
       $('#contact_request').css("border","none");
+      $('#blog_mainlogo').attr("src","../img/savour_orange_logo.png");
       $('#contact_mainlogo').attr("src","img/savour_orange_logo.png");
       $('.black_navlink').css("color","black");
     }
