@@ -1425,6 +1425,10 @@ ul {
   box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
 }
 
+.blog_details h1{
+  text-transform: capitalize;
+}
+
 @media (min-width: 768px) {
   /* line 525, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_blog.scss */
   .blog_details {
