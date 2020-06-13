@@ -39,6 +39,49 @@
 </head>
 
 <body>
+    <div id="blurModal" class="Modal is-hidden is-visuallyHidden">
+        <!-- Modal content -->
+        <div class="Modal-content">
+            <span id="closeModal" class="Close">&times;</span>
+            
+            <div class="container">
+                <h3>Savour! sign up waiting list</h3>
+                <form class="form-contact contact_form" method="post" id="signup_form">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">                        
+                                <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Enter your name'" placeholder='Enter your name' required/>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="company" id="company" type="text" onfocus="this.placeholder = ''"
+                                  onblur="this.placeholder = 'Company Name'" placeholder='Company Name' required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''"
+                                  onblur="this.placeholder = 'Enter email address'" placeholder='Enter email address' required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="number" id="number" type="text" onfocus="this.placeholder = ''"
+                                  onblur="this.placeholder = 'Number'" placeholder='Number'>
+                            </div>
+                            <select name = "type" id="type" required>
+
+                                <option value="hide">-- Client Type --</option>
+                                <option value="B2B">B2B Customer</option>
+                                <option value="Merchant">Merchant</option>
+                                
+                            </select>
+                            <div class="form-group mt-3">
+                                <button type="submit" id="submit_signup" class="button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="blurContainer">
     <!--::header part start::-->
     <header class="main_menu">
         <div class="container">
@@ -78,7 +121,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="contact.html" class="d-none d-sm-block btn_1 home_page_btn">Request Demo</a>
+                        <div class="d-none d-sm-block btn_1 home_page_btn modalBtn">Try For Free</div>
                         
                         
                         
@@ -103,11 +146,11 @@
                 <div class="col-lg-7">
                     <div class="banner_text">
                         <div class="banner_text_iner">
-                            <h1>One-stop B2B Procurement & Sponsorship Platform in Singapore</h1>
+                            <h1>Launching August 2020 : One-stop B2B Procurement & Sponsorship Platform in Singapore</h1>
                             <p>Connecting non-profit organizations, event planners and companies to merchants with products available at bulk discounts and sponsorships for office operations, programmes and event needs.</p>
                          
                            
-                            <a href="contact.html" class="btn_2">try for free</a>
+                            <a style="color: white;" class="btn_2 modalBtn">try for free</a>
                             
                             <button type = 'button' data-toggle="modal" data-src="https://www.youtube.com/embed/sqU_KWSpn0Q" data-target="#myModal"class="btn_3">Video</button>
                             
@@ -295,7 +338,7 @@
     </section>
     <!-- end non profit part -->
 
-    
+    </div>
 
     <!--::pricing part start::-->
     <!-- <section class="pricing_part section_padding home_page_pricing">
@@ -505,21 +548,23 @@
             <h2>Featured On & Supported By</h2>
             <div class="row align-items-center">
 
-                <div class="col-md-6 col-sm-6 col-6">
-                    <div class="featured_logo" style="float: right;">
+                <div class="col-md-4 col-4" style="text-align: right;">
+                    <div class="featured_logo">
                         <img src="img/client_logo/bt.png" alt="">
                     </div>
                 </div>
 
-                <div class="col-md-6 col-sm-6 col-6 ">
+                <div class="col-md-4 col-4 " style="text-align: center;">
                     <div class="featured_logo">
                         <img src="img/client_logo/ocbc.png" alt="">
                     </div>
                 </div>
 
-               
-
-                
+                <div class="col-md-4 col-4 ">
+                    <div class="featured_logo">
+                        <img src="img/client_logo/CNA_logo.png" alt="">
+                    </div>
+                </div>            
 
             </div>
         </div>

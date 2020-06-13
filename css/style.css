@@ -1,4 +1,5 @@
 /**************** extend css start ****************/
+
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,600,700|Rajdhani:400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap");
 /* line 8, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_extends.scss */
@@ -2973,7 +2974,7 @@ ul {
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 44, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_banner.scss */
   .banner_part .banner_text h1 {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 15px;
     line-height: 1.4;
   }
@@ -7213,6 +7214,89 @@ opacity:1;
 }
 
 /* end of faq */
+
+/* start of modal */
+
+.Modal {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  padding-top: 200px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.5s;
+  overflow: auto;
+  transition: all 0.3s linear;
+}
+.modalBtn{
+  cursor: pointer;
+}
+
+.Modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 32px;
+  border-radius: 10px;
+  max-width: 400px;
+  
+}
+.Modal-content h3{
+  font-weight: 600!important;
+}
+.Modal-content form{
+  margin-top:30px ;
+}
+
+.Modal-content .form-control{
+  height: 50px;
+}
+
+.ModalOpen { overflow: hidden; }
+
+.is-hidden { display: none; }
+
+.is-visuallyHidden { opacity: 0; }
+
+.Close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+}
+
+.Close:hover, .Close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.is-blurred {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+@media (max-width: 576px){
+  .Modal{
+    padding-top: 100px;
+  }
+  .Modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 32px;
+    border-radius: 10px;
+    max-width: 320px;    
+  }
+  .Modal-content h3{
+    font-size: large ;
+  }
+
+}
+
+/* end of modal */
+
 
 /* misc hacks */
 

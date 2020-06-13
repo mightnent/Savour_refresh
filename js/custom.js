@@ -1,6 +1,55 @@
 (function ($) {
   "use strict";
 
+  //modal
+  // Get the modal
+  var modal = $('#blurModal');
+
+  // Get the main container and the body
+  var body = $('body');
+  var container = $('#blurContainer');
+
+  // Get the open button
+  var btnOpen = $(".modalBtn");
+
+  // Get the close button
+  var btnClose = $("#closeModal");
+
+  // Open the modal
+  btnOpen.click(function() {
+
+      modal.attr("class","Modal is-visuallyHidden");
+      setTimeout(function() {
+        container.attr("class","MainContainer is-blurred");
+        modal.attr("class","Modal");
+      }, 100);
+      container.parent().attr("class","ModalOpen");
+  });
+
+  // Close the modal
+  function close() { btnClose.click(function() {
+      modal.attr("class","Modal is-hidden is-visuallyHidden");
+      body.attr("class","");
+      container.attr("class","MainContainer");
+      container.parent().attr("class","");
+  });
+  }
+
+  close();
+
+  // When the user clicks anywhere outside of the modal, close it
+  $(window).click(function(event) {
+    
+      //console.log(event);
+      var target = event.target;
+      if (target.id == "blurModal") {
+          modal.attr("class","Modal is-hidden");
+          body.attr("class","");
+          container.attr("class","MainContainer");
+          container.parent().attr("class","");
+      }
+  });
+
   //counting animation
   $('.counter').counterUp({
     delay: 15,
@@ -241,6 +290,24 @@ $('#submit-form').on('click', function(e) {
     }).success(
         alert("We Will Reach Out To You Soon!"),
         $form[0].reset()
+    );
+});
+
+var $signup = $('form#signup_form'),        
+url_signup = 'https://script.google.com/macros/s/AKfycbwhCaedXTAR3WMZoByskjIuMFmHSPErNCvp_Q-qe1VhmS9uoGB2/exec'
+
+$('#submit_signup').on('click', function(e) {
+    console.log("form");
+    e.preventDefault();
+   
+    var jqxhr = $.ajax({
+        url: url_signup,
+        method: "GET",
+        dataType: "json",
+        data: $signup.serialize()
+    }).success(
+        alert("We Will Reach Out To You Soon!"),
+        close()
     );
 });
 
