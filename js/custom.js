@@ -27,15 +27,21 @@
   });
 
   // Close the modal
-  function close() { btnClose.click(function() {
+  btnClose.click(function() {
       modal.attr("class","Modal is-hidden is-visuallyHidden");
       body.attr("class","");
       container.attr("class","MainContainer");
       container.parent().attr("class","");
   });
+  
+  function close(){
+    modal.attr("class","Modal is-hidden is-visuallyHidden");
+      body.attr("class","");
+      container.attr("class","MainContainer");
+      container.parent().attr("class","");
   }
 
-  close();
+  
 
   // When the user clicks anywhere outside of the modal, close it
   $(window).click(function(event) {
