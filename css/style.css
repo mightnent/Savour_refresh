@@ -7310,6 +7310,11 @@ opacity:1;
   background-color: #ebebeb73;
 }
 
+.feature-img-ss{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 @media (max-width: 576px){
   .filler{
     height: 550px;
@@ -7326,5 +7331,7 @@ opacity:1;
     top: 5px !important;
   }
 }
+
+
 
 /* end misc hacks */
