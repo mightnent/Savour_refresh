@@ -199,17 +199,17 @@
       $('.navbar').css("background-color","white");
       $('.navbar').css("box-shadow","0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)");
       $('.nav-link').css("color","black");
-      $('#mainlogo').attr("src","img/savour_orange_logo.png");
+      $('#mainlogo').attr("src","img/savour_orange_logo.svg");
       $('#contact_request').css("border","1px solid #ff4800");
     } else {
       $('.navbar').css("background-color","white");
       $('#index-nav').css("background-color","transparent");
       $('.nav-link').css("color","white");
-      $('#mainlogo').attr("src","img/savour_white_logo.png");
+      $('#mainlogo').attr("src","img/savour_white_logo.svg");
       $('.navbar').css("box-shadow","None");
       $('#contact_request').css("border","none");
-      $('#blog_mainlogo').attr("src","../img/savour_orange_logo.png");
-      $('#contact_mainlogo').attr("src","img/savour_orange_logo.png");
+      $('#blog_mainlogo').attr("src","../img/savour_orange_logo.svg");
+      $('#contact_mainlogo').attr("src","img/savour_orange_logo.svg");
       $('.black_navlink').css("color","black");
     }
   });
