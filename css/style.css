@@ -4257,10 +4257,20 @@ ul {
 }
 
 /* line 129, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
-.footer_part hr {
-  background-color: #cad7dc;
-  margin-top: 50px;
-  margin-bottom: 25px;
+.footer-policy{
+  border-top:1px solid white;
+  color:white;
+  text-align: center;
+}
+
+.footer-policy a{
+  margin: 5px;
+  font-size: medium;
+  color: white;
+}
+
+.footer-policy a:hover{
+  color: #F6A31A;
 }
 
 /* line 135, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
@@ -4300,7 +4310,7 @@ ul {
 
 /* line 162, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part .footer_icon li a :hover {
-  color: #ff4802;
+  color:#F6A31A;
 }
 
 @media (max-width: 576px) {
@@ -4313,12 +4323,14 @@ ul {
 
 /* line 181, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part .copyright_text p {
-  color: #888;
+  color: white;
+  font-size: medium;
+  text-align: center;
 }
 
 /* line 185, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part .copyright_text span {
-  color: #ff4802;
+  color: #F6A31A;
   font-size: 12px;
 }
 
@@ -4331,14 +4343,14 @@ ul {
 
 /* line 197, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part .copyright_text p a {
-  color: #ff4802;
+  color: #F6A31A;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 /* line 201, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part .copyright_text p a:hover {
-  color: #ff4802;
+  color: #F6A31A;
 }
 
 /* line 206, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
@@ -6591,7 +6603,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 162, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part .footer_icon li a :hover {
-  color: #ff4802;
+  color: #F6A31A;
 }
 
 @media (max-width: 576px) {
@@ -6603,15 +6615,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 181, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
-.footer_part .copyright_text p {
-  color: #888;
-}
-
-/* line 185, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
-.footer_part .copyright_text span {
-  color: #ff4802;
-  font-size: 12px;
-}
 
 @media (max-width: 991px) {
   /* line 180, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
@@ -6622,14 +6625,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 197, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part .copyright_text p a {
-  color: #ff4802;
+  color: #F6A31A;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 /* line 201, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part .copyright_text p a:hover {
-  color: #ff4802;
+  color: #F6A31A;
 }
 
 /* line 206, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
