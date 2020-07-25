@@ -2808,11 +2808,24 @@ ul {
   padding-left:200px;
 }
 
-/* banner merchant */
+/* banner merchant and career */
 
 .banner_merchant{
   margin-top:100px;
   background-image: url(../img/meeting.jpg);
+  background-position:center;
+  height: 500px;
+  float:left;
+  width:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.banner_career{
+  margin-top:100px;
+  background-image: url(../img/grow1.jpg);
   background-position:center;
   height: 500px;
   float:left;
@@ -2853,6 +2866,10 @@ ul {
 
 @media (max-width: 576px) {
   .banner_merchant{
+    margin-top:0px;
+    height: 200;
+  }
+  .banner_career{
     margin-top:0px;
     height: 200;
   }
@@ -7300,6 +7317,29 @@ opacity:1;
 
 /* end of modal */
 
+/* start of job-posting */
+.job-posting{
+  margin-top: 700px;
+  padding-bottom: 100px;
+}
+
+.job-posting .no-border{
+  border-top: none;
+  text-align: right;
+}
+
+.onejobpost{
+  margin-top: 150px;
+  padding-bottom: 100px;
+}
+.onejobpost p{
+  font-size:1.2em;
+}
+
+.onejobpost li{
+  font-size: 1.2em;
+}
+/* end of job posting */
 
 /* misc hacks */
 
