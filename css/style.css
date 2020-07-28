@@ -7185,7 +7185,7 @@ opacity:1;
 .faq{
   background-color: #dadada8f;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 50px;  
 }
 .faq .container h2{
@@ -7193,7 +7193,7 @@ opacity:1;
   display:flex;
   justify-content:center;
   align-items:center;
-
+  font-size: 3em;
   margin-bottom:10px;
   color: black;
   
@@ -7202,6 +7202,20 @@ opacity:1;
 .faq .accordion{
   margin-left: 100px;
   margin-right:100px;
+}
+
+.faq .faq-heading{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.faq .question{
+  font-weight: bold;
+  color:black;
+}
+
+.faq .qna{
+  padding: 20px;
 }
 
 .accordion .card{
@@ -7227,9 +7241,16 @@ opacity:1;
 }
 
 @media (max-width: 576px){
+  .faq{
+    padding-top: 50px;
+  }
+  .faq .faq-heading{
+    font-size: 1em;
+    font-weight: bold;
+  }
   .faq .accordion{
-    margin-left: 50px;
-    margin-right:50px;
+    margin-left: 40px;
+    margin-right:40px;
   }
 }
 
