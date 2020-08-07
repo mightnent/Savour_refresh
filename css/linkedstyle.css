@@ -1,0 +1,38 @@
+.rect-container{
+    margin-top: 50px;
+    text-align: center;
+}
+.rectangle{
+    width: 320px;
+    max-width: 320px;
+    height: 60px;
+    background: #F6a31a;
+    display: inline-block;
+    line-height: 60px;
+    /* border-radius: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rectangle-border{
+    width: 320px;
+    max-width: 320px;
+    height: 60px;
+    border: 3px solid #F6a31a;
+    display: inline-block;
+    line-height: 60px;
+    /* border-radius: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rectangle-border .text{
+    color:#F6a31a;
+    font-size: large;
+}
+
+.text{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
