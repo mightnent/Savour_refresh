@@ -69,25 +69,29 @@
   var client_logo = $('.client_logo_slider')
   if(client_logo.length){
     client_logo.owlCarousel({
-      items: 3,
-      loop: false,
+      items: 12,
+      loop: true,
+      dots:true,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true,
       responsive: {
         0: {
           items: 2,
           margin: 15,
-          autoplay: true
+          
         },
         600: {
           items: 2,
           margin: 15,
-          autoplay: true
+          
         },
         991: {
           items: 4,
           margin: 15,
         },
         1200: {
-          items: 4,
+          items: 6,
           margin: 15,
         }
       }             
