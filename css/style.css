@@ -2888,6 +2888,7 @@ ul {
 /**************** banner part css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_banner.scss */
 .banner_part {
+  margin-top: -30px;
   position: relative;
   background-image: url(../img/banner_bg.png);
   background-repeat: no-repeat;
