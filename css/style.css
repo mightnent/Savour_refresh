@@ -7398,6 +7398,21 @@ opacity:1;
   }
 }
 
+@media(max-width:576px){
+  .custom-gutter > [class*='col-']{
+      padding-top:5px;
+      padding-bottom: 5px;
+  }
+}
+
+@media(min-width:768px) {  /* Modify this based on column def */
+
+  .custom-gutter > [class*='col-'] {
+      padding:5px;
+  }
+  
+  }
+
 
 
 /* end misc hacks */
